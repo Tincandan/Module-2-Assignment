@@ -1,0 +1,100 @@
+header {
+font-size: 140%;
+}
+
+nav {
+    overflow: hidden;
+    background-color: black;
+    color: rgb(82, 123, 174);
+}
+
+h1{
+    display: inline;
+    background-color: skyblue;
+}
+
+.contacts {
+    margin: 0 15px;
+    display: inline;
+    text-decoration: underline;
+}
+
+.contacts:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    float: right;
+    margin: 0 0 0 1%;
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.subtitle {
+    padding-top: 50px;
+    text-align: right;
+    background-color: rgb(93, 147, 222);
+}
+
+.dividers {
+    float: left;
+    height: 200px;
+    width: 130px;    
+    padding: 40px 100px 80px 0px;
+    background-color: orange;
+    color: gray;
+}
+
+.dividers2 {
+    float: left;
+    padding: 40px 100px 40px 0;
+    background-color: orange;
+    color: gray;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+    background-color: aqua;
+    color: black;
+}
+
+.boxes p:nth-child(1) {
+    padding: 5px;
+    margin: 15px 20px;
+    background-color: aliceblue;
+    flex: 1 0 100%;
+}
+
+.boxes p:nth-child(2) {
+    padding: 5px;
+    margin: 15px 20px;
+    background-color: aliceblue;
+    flex: 1 0 75%;
+}
+
+.boxes p:nth-child(n+3) {
+    padding: 5px;
+    margin: 15px 20px;
+    background-color: aliceblue;
+    flex: 1 0 40%;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+
+    .boxes {
+        display: inline;
+        background-color: rebeccapurple;
+        color: blue;
+    }
+}
